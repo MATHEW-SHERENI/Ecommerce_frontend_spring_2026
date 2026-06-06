@@ -37,7 +37,7 @@ jobs:
             --build-arg VITE_FRONTEND_URL=${VITE_FRONTEND_URL} \
             --build-arg VITE_STRIPE_PUBLISHABLE_KEY=${VITE_STRIPE_PUBLISHABLE_KEY} \
             --build-arg VITE_SKIP_BACKEND_IMAGES=${VITE_SKIP_BACKEND_IMAGES} \
-            -t ghcr.io/mudabs/ecommerce-frontend:latest .
+            -t ghcr.io/mudabs/ecommerce-frontend-spring-2026:latest .
 
       - name: Push Docker image
-        run: docker push ghcr.io/mudabs/ecommerce-frontend:latest
+        run: docker push ghcr.io/mudabs/ecommerce-frontend-spring-2026:latest
