@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, __dirname, "");
-  const apiBaseUrl = (env.VITE_API_BASE_URL ||"http://localhost:3000/");
+  const apiBaseUrl = (env.VITE_API_BASE_URL ||"https://ecommerce-frontend-spring-2026.pages.dev/");
 
   if (!apiBaseUrl) {
     throw new Error("Missing VITE_API_BASE_URL for the current Vite mode.");
